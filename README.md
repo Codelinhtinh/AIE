@@ -38,15 +38,14 @@ uvicorn api:api --port 8000
 ```
 
 2. Open your browser and navigate to `http://localhost:8000/docs` to check prediction.
-![Alt Text](https://github.com/Codelinhtinh/Exercises-AIO/blob/main/sample/Usage.gif)
+![Alt Text](https://github.com/Codelinhtinh/Exercises-AIO/blob/main/sample/api.gif)
 
 4. Start the streamlit app in makefile:
 ```bash
 streamlit run app.py
 ```
 4. Import image and wait:
-![Alt Text]
-(sample\Usage.gif)
+![Alt Text](https://github.com/Codelinhtinh/Exercises-AIO/blob/main/sample/Usage.gif)
 
 ## Configuration
 You can modify the configuration parameters of the model by updating the CFG class in the configs.py file. The available configuration options are:
