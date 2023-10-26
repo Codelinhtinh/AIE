@@ -38,8 +38,7 @@ uvicorn api:api --port 8000
 ```
 
 2. Open your browser and navigate to `http://localhost:8000/docs` to check prediction.
-![Alt Text]
-([sample\api.gif](https://github.com/Codelinhtinh/Exercises-AIO/blob/main/sample/Usage.gif))
+![Alt Text](https://github.com/Codelinhtinh/Exercises-AIO/blob/main/sample/Usage.gif)
 
 4. Start the streamlit app in makefile:
 ```bash
