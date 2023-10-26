@@ -7,14 +7,14 @@ from io import BytesIO
 
 # Define the Streamlit app
 def main():
-    st.title("Image Prediction App")
+    st.title("Image Object Detection App")
 
     # Upload file through Streamlit's file uploader
     file = st.file_uploader("Choose an image", type=["jpg", "jpeg", "png"])
 
     # Make a POST request to the FastAPI endpoint
     if file is not None:
-        response = requests.post("http://localhost:8003/predict/", files={"file": file})
+        response = requests.post("http://localhost:8000/predict/", files={"file": file})
         if response.status_code == 200:
             # Display the uploaded image
             image = Image.open(file)

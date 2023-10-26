@@ -13,29 +13,6 @@ def prediction(session, image, cfg):
     pred[:,:4] = (pred[:,:4] - paddings) / ratio
     return pred
 
-# def visualize(image, pred):
-#     img_ = image.copy()
-#     drawer = ImageDraw.Draw(img_)
-#     for p in pred:
-#         x1,y1,x2,y2,_, id = p
-#         id = int(id)
-#         drawer.rectangle((x1,y1,x2,y2),outline=IDX2COLORs[id],width=3)
-#     return img_
-
-# def count_objects_by_color(pred):
-#     color_counts = {}
-#     for p in pred:
-#         id = int(p[-1])
-#         color = IDX2COLORs[id]
-#         tag = IDX2TAGs[id]
-
-#         if color not in color_counts:
-#             color_counts[color] = {"count": 0, "tag": tag}
-
-#         color_counts[color]["count"] += 1
-
-#     return color_counts
-
 # Modify the visualize function to use the ImageFont module
 def visualize(image, pred):
     img_ = image.copy()
