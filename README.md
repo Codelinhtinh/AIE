@@ -22,14 +22,15 @@ git clone https://github.com/Codelinhtinh/Exercises-AIO.git
 pip install -r requirements.txt
 ```
 ## Features
-✨ Easy task management with drag-and-drop interface.
+✨This code is a FastAPI application that provides an API endpoint for performing predictions on uploaded images.
 
-✨ Real-time collaboration with team members.
+✨ It uses a pre-trained model to detect objects in images. 
 
-✨ Advanced reporting and analytics tools.
+✨ Uploaded images are processed and resized to a specific image size defined in the CFG class. 
 
-✨ Integration with popular project management platforms.
+✨ The final results are visualized on the original image using the visualize function.
 
+✨The processed and visualized image is saved to a temporary file and returned as a response to the API request.
 ## Usage
 1. Run the FastAPI server in makefile:
 ```bash
@@ -37,14 +38,14 @@ uvicorn api:api --port 8000
 ```
 
 2. Open your browser and navigate to `http://localhost:8000/docs` to check prediction.
-![image](sample\api.gif)
+![Alt Text](sample\api.gif)
 
 3. Start the streamlit app in makefile:
 ```bash
 streamlit run app.py
 ```
 4. Import image and wait:
-![image](sample\Usage.gif)
+![Alt Text](sample\Usage.gif)
 
 ## Configuration
 You can modify the configuration parameters of the model by updating the CFG class in the configs.py file. The available configuration options are:
