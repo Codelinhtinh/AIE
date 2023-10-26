@@ -15,7 +15,7 @@ This is a FastAPI-based web service that accepts an image upload and performs ob
 ## Installation
 1. Clone the repository: 
 ```bash
-git clone https://github.com/Codelinhtinh/Exercises-AIO.git
+git clone https://github.com/Codelinhtinh/AIE.git
 ```
 2. Install project dependencies:
 ```bash
